@@ -1,3 +1,6 @@
+/* ---------------------------
+   FONT & RESET
+---------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +9,14 @@
 }
 
 body {
-  background: #ffe6f0; /* pink lembut */
-  color: #5a2a3c;      /* warna teks gelap */
+  background: #ffe6f0;  /* pink lembut */
+  color: #5a2a3c;       /* teks gelap */
+  line-height: 1.6;
 }
 
-/* HEADER */
+/* ---------------------------
+   HERO / HEADER
+---------------------------- */
 .hero {
   background: linear-gradient(135deg, #ff9acb, #ff6fae);
   color: white;
@@ -18,10 +24,12 @@ body {
   padding: 90px 20px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
 }
 
 .hero h1 {
-  font-size: 38px;
+  font-size: 40px;
+  letter-spacing: 1px;
 }
 
 .hero p {
@@ -29,7 +37,25 @@ body {
   font-size: 18px;
 }
 
-/* CARD */
+.btn {
+  display: inline-block;
+  margin-top: 18px;
+  background: white;
+  color: #ff4f9a;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------------------------
+   CARD SECTION
+---------------------------- */
 .card {
   background: white;
   max-width: 850px;
@@ -47,20 +73,25 @@ body {
 
 .card p {
   text-align: center;
-  line-height: 1.7;
 }
 
-/* BIODATA */
+/* ---------------------------
+   BIODATA LIST
+---------------------------- */
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 ul li {
   padding: 8px 0;
   font-size: 16px;
+  border-bottom: 1px dashed #ff9acb;
 }
 
-/* HOBBY */
+/* ---------------------------
+   HOBBY
+---------------------------- */
 .hobby {
   display: flex;
   justify-content: center;
@@ -76,9 +107,28 @@ ul li {
   font-size: 14px;
 }
 
-/* FOOTER */
+/* ---------------------------
+   FOOTER
+---------------------------- */
 footer {
   text-align: center;
   padding: 20px;
   color: #ff4f9a;
+  margin-top: 20px;
+}
+
+/* ---------------------------
+   RESPONSIVE
+---------------------------- */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .btn {
+    padding: 10px 20px;
+  }
+  .card {
+    margin: 20px;
+    padding: 25px;
+  }
 }
