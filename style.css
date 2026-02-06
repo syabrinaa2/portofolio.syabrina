@@ -2,90 +2,83 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #f4f6f8;
-  color: #333;
-  line-height: 1.6;
+  background: #ffe6f0;
+  color: #5a2a3c;
 }
 
-/* HERO */
+/* HEADER */
 .hero {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background: linear-gradient(135deg, #ff9acb, #ff6fae);
   color: white;
   text-align: center;
   padding: 90px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 38px;
 }
 
 .hero p {
-  margin: 10px 0 25px;
+  margin-top: 10px;
   font-size: 18px;
 }
 
-.btn {
+/* CARD */
+.card {
   background: white;
-  color: #2575fc;
-  padding: 12px 30px;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
 }
 
-/* SECTION */
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-h2 {
+.card h2 {
   text-align: center;
-  margin-bottom: 30px;
-  color: #2575fc;
+  margin-bottom: 20px;
+  color: #ff4f9a;
 }
 
-/* ABOUT & EDUCATION */
-.about p,
-.education p {
+.card p {
   text-align: center;
-  max-width: 700px;
-  margin: auto;
+  line-height: 1.7;
 }
 
-/* SKILLS */
-.skill-list,
-.hobby-list {
+/* BIODATA */
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+/* HOBBY */
+.hobby {
   display: flex;
   justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
-  gap: 12px;
 }
 
-.skill-list span,
-.hobby-list span {
-  background: #2575fc;
+.hobby span {
+  background: #ff6fae;
   color: white;
-  padding: 8px 18px;
-  border-radius: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
   font-size: 14px;
-}
-
-/* CONTACT */
-.contact p {
-  text-align: center;
-  margin-bottom: 8px;
 }
 
 /* FOOTER */
 footer {
-  background: #ddd;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  color: #ff4f9a;
 }
